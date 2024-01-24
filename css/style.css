@@ -7,7 +7,7 @@
 }
 
 html, body {
-    background-image: linear-gradient(to top right, #001670 23%, #39A2FE 100%);
+    background-image: linear-gradient(to top right, #001670, #39A2FE);
     color: white;
 }
 
