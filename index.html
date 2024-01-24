@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tela de Cadastro</title>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Faça seu Cadastro</h1>
+            <p>Complete os campos abaixo!</p>
+        </header>
+
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu Email" required>
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade <span>(opcional)</span></label>
+                <input type="number" name="idade" id="idade" placeholder="Idade">
+            </div>
+            <div class="form-group">
+                <label>Qual opção melhor descreve sua função atual?</label>
+                <select name="funcao">
+                    <option value="0" selected disabled>Selecione a função atual</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="trabalho_integral">Trabalho em tempo integral</option>
+                    <option value="aluno_integral">Aluno em tempo integral</option>
+                    <option value="nao_dizer">Prefiro não dizer</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Está gostando desse formulário?</p>
+                <label><input type="radio" name="feedback" value="definitivamente"> Definitivamente</label>
+                <label><input type="radio" name="feedback" value="talvez"> Talvez</label>
+                <label><input type="radio" name="feedback" value="nao"> Não</label>
+            </div>
+            <div class="form-group">
+                <label for="carreira">Qual carreira deseja seguir?</label>
+                <select name="carreira">
+                    <option value="0" selected disabled>Selecione uma opção</option>
+                    <option value="frontend">Frond-end</option>
+                    <option value="backend">Back-end</option>
+                    <option value="fullstack">Fullstack</option>
+                    <option value="mobile">Mobile</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>O que você gostaria de ver melhorado nesse site? <span>Marque todas as opções aplicáveis</span></p>
+                <label><input type="checkbox" name="melhora" value="layout"> Layout do site</label>
+                <label><input type="checkbox" name="melhora" value="cores"> Cores do site</label>
+                <label><input type="checkbox" name="melhora" value="fontes"> Fontes do site</label>
+                <label><input type="checkbox" name="melhora" value="acessibilidade"> Acessibilidade do site</label>
+                <label><input type="checkbox" name="melhora" value="usabilidade"> Usabilidade do site</label>
+                <label><input type="checkbox" name="melhora" value="velocidade"> Velocidade do site</label>
+            </div>
+
+            <div class="form-comment">
+                <label for="comentario">Algum comentário ou sujestão?</label>
+                <textarea name="comentario" id="comentario"></textarea>
+            </div>
+
+            <div class="form-button">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
